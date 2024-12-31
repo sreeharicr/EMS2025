@@ -14,12 +14,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { routes } from './app.routes';  // Import the routes
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatOptionModule } from '@angular/material/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    FooterComponent,
-    LoginComponent,
+    // HeaderComponent,
+    // FooterComponent,
+    // LoginComponent,
     HomeComponent
   ],
   imports: [
@@ -33,7 +35,9 @@ import { MatOptionModule } from '@angular/material/core';
     MatToolbarModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatOptionModule
+    MatOptionModule,
+    BrowserAnimationsModule,
+    CommonModule
   ],
   providers: [],
 })
