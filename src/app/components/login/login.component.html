@@ -1,15 +1,19 @@
-<!-- login.component.html -->
-<div class="login-container">
+<div>
+    <app-header></app-header>
+  </div>
+  
+  <div class="login-container">
     <mat-card class="login-card">
-      <mat-card-title style="display: flex;align-items: center; justify-content: center;margin-bottom: 10px; color: rgb(0, 85, 24); font-weight: bold; font-size: larger;">Login</mat-card-title>
+      <mat-card-title class="login-card-title">Login</mat-card-title>
+  
       <form (ngSubmit)="onSubmit()">
         <mat-form-field appearance="fill" class="input-field">
-          <mat-label class="mat-label">User ID</mat-label>
+          <mat-label>User ID</mat-label>
           <input matInput [(ngModel)]="userId" name="userId" required />
         </mat-form-field>
   
         <mat-form-field appearance="fill" class="input-field">
-          <mat-label class="mat-label">Password</mat-label>
+          <mat-label>Password</mat-label>
           <input matInput type="password" [(ngModel)]="password" name="password" required />
         </mat-form-field>
   
@@ -22,7 +26,7 @@
           </select>
         </mat-form-field>
   
-        <button mat-raised-button color="primary" type="submit" style="background-color: #006Db6; color: white;">Login</button>
+        <button mat-raised-button color="primary" type="submit" class="login-button">Login</button>
       </form>
   
       <div class="links">
@@ -30,5 +34,9 @@
         <a routerLink="/create-account">Create Account</a>
       </div>
     </mat-card>
+  </div>
+  
+  <div>
+    <app-footer></app-footer>
   </div>
   
